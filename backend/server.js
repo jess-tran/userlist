@@ -3,7 +3,6 @@ const users = require("./data");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
 app.use(express.json());
 
 const filteredUsers = users.map(({ id, name, address, phone }) => {
